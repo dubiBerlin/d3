@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+			}
+
+			.svg_canvas {
+				display: block;
+				margin: 0 auto;
+				background-color: gray;
+			}
+
+			.my_element_updated {
+				stroke-width: 2;
+				stroke: blue;
+			}
+
+			#myBtn {
+				margin-left: 50px;
+			}
+
+			.bar {
+				width: 60px;
+				background-color: deepskyblue;
+			}
+
+			/* #container {
+        width: 400px;
+        height: 400px;
+        background-color: darkred;
+      } */
+		</style>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script> -->
+		<title>D3</title>
+	</head>
+	<body>
+		<svg id="svg" height="500" width="900" class="svg_canvas"></svg>
+		<br />
+		<hr />
+		<button id="myBtn">Daten</button>
+		<br />
+		<hr />
+		<div id="container">
+			<div class="bar"></div>
+		</div>
+
+		<button id="runBtn">Run D3</button>
+		<script src="/datenFiltern.js"></script>
+	</body>
+</html>
